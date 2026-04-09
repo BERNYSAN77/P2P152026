@@ -24,11 +24,15 @@ public class Motor {
         }
     }
     public void ajustarVelocidad(int nuevaVelocidad){
-        if (nuevaVelocidad < 0 || nuevaVelocidad > 100){
-            System.out.println("El dato es erroneo");
-        }else{
-            velocidad = nuevaVelocidad;
-        }
+       if(estado){
+           if (nuevaVelocidad < 0 || nuevaVelocidad > 100){
+               System.out.println("El dato es erroneo");
+           }else{
+               velocidad = nuevaVelocidad;
+           }
+       }else
+           System.out.println("no se puede setear velocidad si el motor està apagado");
+
     }
     public void mostrarDatos(){
         if(estado){
