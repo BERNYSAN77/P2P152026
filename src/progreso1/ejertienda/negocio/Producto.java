@@ -15,8 +15,10 @@ public class Producto {
     }
     public Producto(String nombre, double precio, int stock){
         this.nombre = nombre;
-        this.precio = precio;
-        this.stock = stock;
+       /* this.precio = precio;
+        this.stock = stock;*/
+        setPrecio(precio);
+        setStock(stock);
     }
     /*
     métodos get()-> sacar la información de mis atributos
@@ -42,9 +44,16 @@ public class Producto {
         this.nombre = nombre;
     }
     public void setPrecio(double precio){
-        this.precio = precio;
+        //actualiza el valor solo si es válido
+        if(precio > 0)
+            this.precio = precio;
     }
     public void setStock(int stock){
+        //actualiza el valor si es vàlido, caso contrario setea
+        if(stock < 0)
+            stock = 0;
         this.stock = stock;
+
+
     }
 }
