@@ -54,6 +54,22 @@ public class Producto {
             stock = 0;
         this.stock = stock;
 
+    }
+    public double vender (int cantidad){
+        if (cantidad > 0 && cantidad <= stock){
+            stock -= cantidad;
+            return cantidad * precio;
+        }
+        return 0;
+    }
+    public void abastecer(int cantidad){
+        if(cantidad > 0)
+            stock += cantidad;
+    }
 
+
+    @Override
+    public String toString(){
+       return "Nombre: "+nombre+"\nPrecio: $"+precio+"\nStock: "+stock;
     }
 }

@@ -4,7 +4,7 @@ import progreso1.ejertienda.negocio.Producto;
 
 public class Main {
     public static void main(String[] args) {
-        Producto pr1 = new Producto("cartulina",-0.30,-100);
+        Producto pr1 = new Producto("cartulina",0.30,100);
         Producto pr2 = new Producto();
 
         System.out.println("Datos del objeto pr1");
@@ -33,5 +33,8 @@ public class Main {
         System.out.println("Nombre: "+pr2.getNombre());
         System.out.println("Precio: "+pr2.getPrecio());
         System.out.println("Stock: "+pr2.getStock());
+
+        System.out.println("\nDatos del objeto pr1\n"+pr1);
+
     }
 }
