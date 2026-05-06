@@ -9,7 +9,7 @@ public class PruebaEmpleado {
         double salario;
 
         //leer variables auxiliares
-        em1 = new Empleado(nombre,apellido,salario);
+       // em1 = new Empleado(nombre,apellido,salario);
 
     }
 }
