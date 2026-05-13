@@ -27,11 +27,15 @@ public class MainSuscripcion {
                     System.out.print("Ingrese el costo mensual: ");
                     costo = Double.parseDouble(sc.nextLine());
                     sd = new SuscripcionDigital(cliente,plan,costo,meses);
+                  //  arreglo[i] = new SuscripcionDigital(cliente,plan,costo,meses);
+                   // lista.add(new SuscripcionDigital(cliente,plan,costo,meses));
 
                 }break;
                 case 2:{
                     if(sd != null)
                         System.out.println(sd.evaluarRentabilidad());
+                  //  System.out.println(arreglo[i].evaluarRentabilidad());
+                 //   System.out.println(lista.get(i).evaluarRentabilidad());
                     else
                         System.out.println("No existe ninguna suscripción");
 
